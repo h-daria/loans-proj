@@ -1,0 +1,14 @@
+<div mat-dialog-content class="dialog">
+  <div id="close-button"><button mat-button mat-dialog-close><mat-icon>close</mat-icon></button></div>
+  <h1 mat-dialog-title>Invest In Loan</h1>
+  <ul>
+    <li>{{data.title}}</li>
+    <li>Available amount to invest: <span>{{data.available}}</span></li>
+    <li>Loan ends in: <span>{{millisecondsToTimeRemaining(data.term_remaining)}}</span></li>
+  </ul>
+</div>
+<div mat-dialog-actions class="action">
+  <label for="amount-input">Investment amount</label>
+  <input type="number" min="0" step="500" id="amount-input" [(ngModel)]="investmentAmount">
+  <button mat-button [mat-dialog-close]="investmentAmount" cdkFocusInitial>INVEST</button>
+</div>

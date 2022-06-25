@@ -1,0 +1,92 @@
+.header-container {
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.header-container h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin:  1rem;
+    margin-left: 4rem;
+}
+
+hr {
+    margin: 0;
+}
+
+.available-loans {
+    width: 50%;
+    border: 1px solid rgb(115, 115, 115);
+    border-radius: 10px;
+    margin: 2rem;
+    position: relative;
+}
+
+.available-loans ul {
+    list-style: none;
+    margin-top: 0;
+}
+
+.available-loans ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loan-data {
+    list-style: none;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+.loan-data li {
+    margin-right: 1rem;
+}
+
+.loan-data span {
+    color: rgb(53, 138, 213);
+}
+
+#notification {
+    position: relative;
+    width: 100%;
+    height: 1.8rem;
+}
+#notification p{
+    margin: 0.5rem 1rem 0 0.5rem;
+    float: right;
+    color: rgb(76, 224, 43);
+    /* position: absolute; */
+}
+
+.loan-container h2 {
+    margin-top: 0;
+}
+.action-button {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    width: 15%;
+    padding: 0.5rem;
+    margin-right: 6rem;
+    background-color: rgb(248, 232, 51);
+    border-radius: 10px;
+    border: 1px solid rgb(248, 232, 51);
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: rgba(248, 232, 51, 0.7);
+  }
+
+  .user-balance {
+    margin-left: 3rem;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

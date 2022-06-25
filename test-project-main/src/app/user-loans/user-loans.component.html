@@ -1,0 +1,25 @@
+<div class="header-container">
+    <h1>Current Loans</h1>
+</div>
+<hr>
+<div class="available-loans" *ngFor="let loan of loans">
+    <div id="notification" ><p *ngIf="loan.isInvested">Invested</p></div>
+    <ul>
+        <li>
+            <div class="loan-container">
+                <h2>Loan Name 1</h2>
+                <ul class="loan-data">
+                    <li>{{loan.title}}</li>
+                    <li>Tranche: <span>{{loan.tranche}}</span></li>
+                    <li>Available amount to invest: <span>{{loan.available}}</span></li>
+                    <li>Annualised return: <span>{{loan.annualised_return}}</span></li>
+                </ul>
+            </div>
+            <button mat-raised-button class="action-button" (click)="openDialog(loan)">INVEST</button>
+        </li>
+    </ul>
+</div>
+
+<div class="user-balance">
+    <p>Total amount available for investment: </p><span>${{userBalance}}</span>
+</div>
